@@ -4,7 +4,7 @@ import { useEffect, useState, useRef } from "react";
 import styles from './styles/BackgroundImage.module.css';
 import Image from 'next/image';
 
-export default function BackgroundImage({bg}) {
+export default function BackgroundImage({bg}: any) {
   const [brightness, setBrightness] = useState(0.7);
   const lastScroll = useRef(0);
 

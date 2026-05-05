@@ -42,7 +42,7 @@ export default function Founders() {
           {Sentry.map((f) => (
             <div key={f.name} className={`${styles.card}`}>
               <div className={styles.avatar}>
-                <span className={styles.symbol}>{f.avatar}</span>
+                <Avatar user={f.id} />
               </div>
               <div className={styles.info}>
                 <h3 className={styles.name}>{f.name}</h3>
@@ -60,7 +60,7 @@ export default function Founders() {
           {DaiLi.map((f) => (
             <div key={f.name} className={`${styles.card}`}>
               <div className={styles.avatar}>
-                <span className={styles.symbol}>{f.avatar}</span>
+                <Avatar user={f.id} />
               </div>
               <div className={styles.info}>
                 <h3 className={styles.name}>{f.name}</h3>

@@ -23,8 +23,8 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-      - run: npm ci
       - run: |
+        npm ci
         git config --global user.email kspa@vt.edu
         git config --global user.name Kyle S
         git remote set-url origin https://kdspa:${{ secrets.GH_TOKEN }}@github.com/atlacord/website.git

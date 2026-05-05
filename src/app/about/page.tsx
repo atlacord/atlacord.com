@@ -19,7 +19,6 @@ export default function AboutPage() {
         <AboutHero />
         <Stats />
         <Timeline />
-        <Founders />
       </main>
       <Footer />
     </>

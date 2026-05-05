@@ -26,7 +26,7 @@ jobs:
       - run: npm ci
       - run: git config --global user.email kspa@vt.edu
       - run: git config --global user.name kdspa
-      - run: git config --global url https://${{ secrets.GH_TOKEN }}@github.com
+      - run: git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/atlacord/website
       - run: npm run deploy
         env:
           NEXT_PUBLIC_BASE_PATH: ''

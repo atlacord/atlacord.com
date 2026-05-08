@@ -1,0 +1,9 @@
+.draft {
+  display: flex;
+  font-size: 1.5rem;
+  color: var(--water-pale);
+  font-style: italic;
+  justify-self: auto;
+  align-items: center;
+  margin-left: 650px;
+}

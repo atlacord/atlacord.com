@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Hero from '@/components/home/Hero';
 import Events from '@/components/home/Events';
 import Navbar from '@/components/common/Navbar';
-import BackgroundImage from '@/components/common/BackgroundImage';
+import DraftBanner from '@/components/common/DraftBanner';
 
 export const metadata: Metadata = {
   title: 'Home | ATLAcord',
@@ -15,7 +15,6 @@ export default function Home() {
             <Navbar />
             <Hero />
             <Events />
-            <BackgroundImage />
         </>
     )
 }

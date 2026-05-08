@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import styles from './styles/Navbar.module.css';
+import DraftBanner from './DraftBanner';
 
 const links = [
   { href: '/', label: 'Home' },
@@ -25,6 +26,7 @@ export default function Navbar() {
         <span className={open ? styles.lineOpen : ''} />
       </button>
 
+      <DraftBanner />;
       <ul className={`${styles.links} ${open ? styles.linksOpen : ''}`}>
         {links.map((l) => (
           <li key={l.href}>

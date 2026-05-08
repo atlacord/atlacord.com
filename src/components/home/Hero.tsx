@@ -7,7 +7,7 @@ export default function Hero() {
     <section id="home" className={styles.hero}>
       <div className={styles.bgGrid} aria-hidden />
       <div className={styles.bgGlow} aria-hidden />
-      <div><BackgroundImage bg={background} aria-hidden/></div>
+      <div id="bg-image"><BackgroundImage bg={background}/></div>
 
       {/* Four nation orbs */}
       <div className={styles.orbs} aria-hidden>
